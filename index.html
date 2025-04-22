@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sorry Shree 🙇</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,86 +13,33 @@
     }
 
     body {
-      background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
       height: 100vh;
-      overflow: hidden;
-      font-family: 'Segoe UI', sans-serif;
+      background: url('23.jpg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
-      color: white;
-    }
-
-    .container {
-      text-align: center;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      font-family: 'Great Vibes', cursive;
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 4rem;
+      color: #8B008B;
+      text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
     }
 
-    p {
-      font-size: 1.2rem;
-      max-width: 500px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    .sparkle {
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      background: white;
-      border-radius: 50%;
-      opacity: 0.8;
-      animation: sparkle 3s infinite;
-    }
-
-    @keyframes sparkle {
-      0% {
-        transform: translateY(0) scale(1);
-        opacity: 0.8;
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
       }
-      100% {
-        transform: translateY(-800px) scale(0.5);
-        opacity: 0;
-      }
-    }
-
-    .flower-img {
-      width: 200px;
-      margin: 1.5rem auto;
-      border-radius: 15px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="flower.png" alt="flower" class="flower-img" />
-    <h1>Sorry Shree 🙇</h1>
-    <p>Didn't mean to mess things up. Just hoping you feel the care behind these words. Missing you around.</p>
-  </div>
-
-  <script>
-    function createSparkle() {
-      const sparkle = document.createElement('div');
-      sparkle.classList.add('sparkle');
-      sparkle.style.left = `${Math.random() * window.innerWidth}px`;
-      sparkle.style.top = `${window.innerHeight}px`;
-      sparkle.style.animationDuration = `${2 + Math.random() * 3}s`;
-      document.body.appendChild(sparkle);
-
-      setTimeout(() => sparkle.remove(), 5000);
-    }
-
-    setInterval(createSparkle, 100);
-  </script>
+  <h1>Sorry Shree 🙇</h1>
 </body>
 </html>
